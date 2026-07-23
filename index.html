@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prayani Trace — Batch Verification</title>
+<title>Prayani Trace Batch Verification</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
@@ -256,7 +256,7 @@
       <h1>Prayani Trace</h1>
     </div>
   </div>
-  <p class="header-note">Batch-level traceability from the Hart, MI kitchen to the shelf — built as a working concept for the Blockchain Developer application.</p>
+  <p class="header-note">Batch-level traceability from the Hart, MI kitchen to the shelf  built as a working concept for the Blockchain Developer application.</p>
 </header>
 
 <nav class="tabs">
@@ -271,7 +271,7 @@
   <section id="view-lookup" class="view active">
     <div class="intro">
       <h2>Scan a jar. See its journey.</h2>
-      <p>Every batch of Prayani raita is logged at each handoff — production, distribution, and shelf — into a tamper-evident chain. A customer (or a store, or Prayani itself during a recall) can look up any batch ID and see exactly where it's been, with cryptographic proof the record hasn't been altered.</p>
+      <p>Every batch of Prayani raita is logged at each handoff  production, distribution, and shelf  into a tamper-evident chain. A customer (or a store, or Prayani itself during a recall) can look up any batch ID and see exactly where it's been, with cryptographic proof the record hasn't been altered.</p>
     </div>
 
     <div class="sample-chips" id="sampleChips"></div>
@@ -293,7 +293,7 @@
   <section id="view-ops" class="view">
     <div class="intro">
       <h2>Log a chain-of-custody event</h2>
-      <p>This simulates what a kitchen lead, a Lipari warehouse scan, or a Kroger receiving check-in would do — one entry per handoff. Each entry is hashed together with the one before it, so editing old history breaks the chain visibly.</p>
+      <p>This simulates what a kitchen lead, a Lipari warehouse scan, or a Kroger receiving check-in would do  one entry per handoff. Each entry is hashed together with the one before it, so editing old history breaks the chain visibly.</p>
     </div>
 
     <div class="ops-grid">
@@ -348,30 +348,30 @@
   <section id="view-roadmap" class="view">
     <div class="intro">
       <h2>What this could grow into</h2>
-      <p>The traceability system above is the foundation — it's what's actually built and working. These two ideas extend the same batch/event data to other parts of the business, but they're deliberately left as roadmap, not built, since they only make sense once the core system is proven and each depends on a partner (Lipari, or a rewards platform) buying in.</p>
+      <p>The traceability system above is the foundation it's what's actually built and working. These two ideas extend the same batch/event data to other parts of the business, but they're deliberately left as roadmap, not built, since they only make sense once the core system is proven and each depends on a partner (Lipari, or a rewards platform) buying in.</p>
     </div>
 
     <div class="roadmap-grid">
       <div class="roadmap-card">
         <span class="tag">Future · Customer-facing</span>
         <h4>Loyalty rewards on scan</h4>
-        <p>Each time a customer scans a jar's QR code to verify it, they'd earn a small reward token redeemable for a discount — turning the trust feature into a repeat-purchase driver. Reuses the same batch/scan data already being logged, with no new backend.</p>
+        <p>Each time a customer scans a jar's QR code to verify it, they'd earn a small reward token redeemable for a discount turning the trust feature into a repeat-purchase driver. Reuses the same batch/scan data already being logged, with no new backend.</p>
       </div>
       <div class="roadmap-card b">
         <span class="tag">Future · Partner-facing</span>
         <h4>Distributor handoff automation</h4>
-        <p>Right now, a Lipari or Kroger receiving scan would be logged manually into this system. A further step would let that scan trigger the next step automatically — e.g. confirming delivery, which is the kind of thing that could eventually tie into payment or inventory reconciliation. This needs Lipari's systems to participate, so it's a partnership conversation before it's an engineering one.</p>
+        <p>Right now, a Lipari or Kroger receiving scan would be logged manually into this system. A further step would let that scan trigger the next step automatically  e.g. confirming delivery, which is the kind of thing that could eventually tie into payment or inventory reconciliation. This needs Lipari's systems to participate, so it's a partnership conversation before it's an engineering one.</p>
       </div>
     </div>
   </section>
 
 </main>
 
-<footer>Built as a scoped concept demo — hash-chained in the browser to illustrate the mechanism, not deployed to a live blockchain network.</footer>
+<footer>Built as a scoped concept demo hash-chained in the browser to illustrate the mechanism, not deployed to a live blockchain network.</footer>
 
 <script>
 /* ---------------------------------------------------------------
-   Minimal hash-chain "ledger" — each record's hash is a function of
+   Minimal hash-chain "ledger" each record's hash is a function of
    its own data + the previous record's hash, so changing history
    breaks every hash after the edit. This is the core mechanic that
    real blockchain traceability systems rely on.
